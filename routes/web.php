@@ -19,4 +19,5 @@ Auth::routes();
 
 Route::get('/', 'StartController@index')->name('start');
 Route::get('/get-json', 'StartController@getJson')->name('getJson');
+Route::get('/chart-data', 'StartController@chartData')->name('chartData');
 Route::get('/home', 'HomeController@index')->name('home');

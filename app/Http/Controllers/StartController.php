@@ -36,6 +36,9 @@ class StartController extends Controller
         ]);
     }
 
+    /**
+     * @return array
+     */
     public function getJson()
     {
         return [
@@ -46,6 +49,22 @@ class StartController extends Controller
             [
                 'title' => 'second link',
                 'link'  => 'https://www.youtube.com/watch?v=NNdTljRzPqE&index=5&list=PLD5U-C5KK50X1KcfueA73sGSjBsd8vgVG'
+            ]
+        ];
+    }
+
+    /**
+     * @return array
+     */
+    public function chartData()
+    {
+        return [
+            'labels'   => ['march', 'april', 'may', 'june'],
+            'datasets' => [[
+                               'label'          => 'Sels',
+                               'bacgroundColor' => '#F26202',
+                               'data'           => [15000, 5000, 10000, 30000]
+                           ]
             ]
         ];
     }

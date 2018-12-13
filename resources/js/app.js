@@ -5,13 +5,11 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+// require('./bootstrap');
 
 // window.Vue = require('vue');
 import Vue from 'vue'
-import LaravelUpdated from './components/LaravelUpdated'
-import PropComponent from './components/PropComponent'
-import AjaxComponent from './components/AjaxComponent'
+import ChartlineComponent from './components/ChartlineComponent'
 
 /**
  * The following block of code may be used to automatically register your
@@ -21,7 +19,7 @@ import AjaxComponent from './components/AjaxComponent'
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+// Vue.component('example-component', require('./components/ExampleComponent.vue'));
 // Vue.component('laravel-updated', require('./components/LaravelUpdated.vue'));
 
 // const files = require.context('./', true, /\.vue$/i)
@@ -36,8 +34,6 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app',
     components: {
-        LaravelUpdated,
-        PropComponent,
-        AjaxComponent
+        ChartlineComponent
     }
 })
